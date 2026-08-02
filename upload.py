@@ -101,7 +101,7 @@ os.system(f'echo "{banner}" | lolcat 2>/dev/null || echo "{banner}"')
 
 print(f"""
 {W}╭────────────────────────────────────────────────────────────────╮
-{W}│ {W}Developer {W}:{G} Rullzzz06,{W} Tools {W}:{G}Add User Access
+{W}│ {W}Developer {W}:{G} Rullzzz06,{W} Tools {W}:{G} Add User Access
 {W}╰────────────────────────────────────────────────────────────────╯{N}""")
 print(f"{W}╭────────────────────────────────────────────────────────────────╮{N}")
 print(f"{W}│ Script Ini menambahkan Akses user Tools {G}Mikasa{N}")
@@ -109,9 +109,9 @@ print(f"{W}│ Untuk Setiap Pembeli{N}")
 print(f"{W}╰────────────────────────────────────────────────────────────────╯{N}")
 
 print(f"{W}╭────────────────────────────────────────────────────────────────╮{N}")
-print(f"{W}│ Masukkan {G}UID Termux{W} user (dari .device_uid){N}")
-print(f"{W}╰─────{W}╭{G} U I D{W} ───────────────────────────────────────────────────╯")
-uid = input(f"{W}      ╰──{G}❯{W} ").strip()
+print(f"{W}│ Masukkan {G}UID Termux{W} User{N}")
+print(f"{W}╰──{W}╭{G} U I D{W} ───────────────────────────────────────────────────╯")
+uid = input(f"{W}   ╰──{G}❯{W} ").strip()
 
 if not uid:
     print(f"\n{R}✗ UID tidak boleh kosong!{N}")
@@ -120,8 +120,8 @@ if not uid:
 
 print(f"{W}╭────────────────────────────────────────────────────────────────╮{N}")
 print(f"{W}│ Masukkan {G}Nama{W} user (tanpa spasi){N}")
-print(f"{W}╰─────{W}╭{G} N A M A{W} ─────────────────────────────────────────────────╯")
-nama = input(f"{W}     ╰──{G}❯{W} ").strip()
+print(f"{W}╰──{W}╭{G} N A M A{W} ─────────────────────────────────────────────────╯")
+nama = input(f"{W}   ╰──{G}❯{W} ").strip()
 
 if not nama:
     print(f"\n{R}✗ Nama tidak boleh kosong!{N}")
@@ -135,8 +135,8 @@ if " " in nama:
 
 print(f"{W}╭──────────────────────────────────────────────────────╮{N}")
 print(f"{W}│ {G}Data User Buyer{N}")
-print(f"{W}│ [ {G}Uid{W} ] = {G}{uid}{N}")
-print(f"{W}│ [ {G}Nama{W} ] = {G}{nama}{N}")
+print(f"{W}│ [ {W}Uid{W} ] = {G}{uid}{N}")
+print(f"{W}│ [ {W}Nama{W} ] = {G}{nama}{N}")
 print(f"{W}╰──────────────────────────────────────────────────────╯{N}")
 confirm = input(f"╰──{G}❯{W} Yakin mau tambahkan? (y/n): {N}").strip().lower()
 if confirm != 'y':
@@ -208,7 +208,7 @@ try:
             except:
                 pass
     
-    nomor_urut = max_num + 1
+    nomor_urut = 1
     
     new_line = f"{uid}|{nama}|{nomor_urut}"
     lines.append(new_line)
